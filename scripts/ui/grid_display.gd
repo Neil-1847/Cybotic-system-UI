@@ -69,8 +69,8 @@ func _on_gui_input(event: InputEvent):
 		var mouse_pos = get_local_mouse_position()
 		preview_position = world_to_grid(mouse_pos) - drag_offset
 		queue_redraw()
-
-elif event is InputEventKey and event.pressed:
+	
+	elif event is InputEventKey and event.pressed:
 		if event.keycode == KEY_R and selected_module:
 			cyborg_manager.rotate_module(selected_module)
 			queue_redraw()
