@@ -1,0 +1,39 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   name=value ; assign values
+;   name=value ; each property in its own line
+
+config_version=5
+
+[application]
+
+config/name="Cybotic System UI"
+config/version="0.1.0"
+config/description="Advanced Cyborg Body Modification Interface with Tetromino-based Enhancement System"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.1")
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/window_width_override=1920
+window/size/window_height_override=1080
+ui/canvas_textures/default_texture_filter=0
+
+[filesystem]
+
+import/blending/mode=1
+
+[physics]
+
+physics/2d/default_gravity=0.0
+
+[rendering]
+
+renderer/rendering_method="canvas_item"
+textures/canvas_textures/default_texture_filter=0
